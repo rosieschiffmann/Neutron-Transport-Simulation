@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 mean_emissions = []
 error_emissions = []
-neutron_numbers = np.array([100,1000,10000,50000,100000])
+neutron_numbers = np.array([100,1000,10000,50000,80000,100000])
 
-file_list = ["neutron_penetration_emissions_100.csv", "neutron_penetration_emissions_1000.csv", "neutron_penetration_emissions_10000.csv", "neutron_penetration_emissions_50000.csv", "neutron_penetration_emissions_100000.csv"]
+file_list = ["neutron_penetration_emissions_100.csv", "neutron_penetration_emissions_1000.csv", "neutron_penetration_emissions_10000.csv", "neutron_penetration_emissions_50000.csv", "neutron_penetration_emissions_80000.csv","neutron_penetration_emissions_100000.csv"]
 for file in file_list:
   df = pd.read_csv(file)
   average_emissions_temp = df['emissions'].mean()
